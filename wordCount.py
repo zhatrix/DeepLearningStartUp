@@ -4,6 +4,7 @@ from  collections  import Counter
 # 打开文件，读取内容，并把词存于一个list里
 loadFile = open("happiness_seg.txt")
 content = loadFile.read()
+wordList = content.split(" ")
 # 生成一个计数的字典
 c = Counter()
 # 把满足条件的二元词组放入计数字典中，并计数
